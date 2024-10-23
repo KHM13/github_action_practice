@@ -24,7 +24,8 @@ jobs:
    
    # 러너의 셸을 사용하여 단일 명령을 실행함
    - name: install python
-     run: sudo apt-get install python
+     run: |
+      sudo apt-get install python
    # 러너의 셸을 사용하여 일련의 명령을 실행함
    - name: Run main.py
      run: python main.py
