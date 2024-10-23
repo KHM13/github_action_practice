@@ -23,10 +23,8 @@ jobs:
    # https://github.com/actions/checkout 을 사용함.
    
    # 러너의 셸을 사용하여 단일 명령을 실행함
-   - name: Run a one-line script
-     run: echo Hello, world!
+   - name: install python
+     run: apt-get install python
    # 러너의 셸을 사용하여 일련의 명령을 실행함
-   - name: Run a multi-line script
-     run: |
-       echo Add other actions to build,
-       echo test, and deploy your project.
+   - name: Run main.py
+     run: python main.py
